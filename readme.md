@@ -1,4 +1,4 @@
-# Deciphering Mutational Impacts on Predicting Drug-Target Affinity through Interpretable Transfer Learning
+# Deciphering the Resistance Mechanisms of Protein Mutations through Interpretable Transfer Learning
 
 # Requirements
 ```
