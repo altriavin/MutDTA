@@ -1,4 +1,4 @@
-# Deciphering the Resistance Mechanisms of Protein Mutations through Interpretable Transfer Learning
+# MutDTA: Unveiling Resistance Mechanisms of Viral Protein Mutations via Interpretable Transfer Learning
 
 # Requirements
 ```
