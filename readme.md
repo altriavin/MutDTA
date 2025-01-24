@@ -20,7 +20,9 @@ All publicly datasets used can be accessed here:
 | BindingDB   | https://www.bindingdb.org/rwd/bind/index.jsp        |
 | BioLip   | https://zhanggroup.org/BioLiP/index.cgi        |
 | Plaitnum | https://biosig.lab.uq.edu.au/platinum |
+
 Or you can use our preprocessing data:
+
 | dataset      | url |
 | ----------- | ----------- |
 | pre-training      | https://github.com/altriavin/MutDTA/blob/master/dataset/Kd.csv       |
@@ -41,7 +43,7 @@ If you want to run MutDTA on your data, just preprocess your data into the speci
 
 | smile      | seq | labels |
 | ----------- | ----------- | ----------- |
-| Cc1ccc(CNS(=O)(=O)c2ccc(s2)S(N)(=O)=O)cc1  | MSHHWGYGKHNGPEHWHKDFPIAKGERQSPVDIDTHTAKYDPSLKPLSVSYDQATSLRILNNGHAFNVEFDDSQDKAVLKGGPLDGTYRLIQFHFHWGSLDGQGSEHTVDKKKYAAELHLVHWNTKYGDFGKAVQQPDGLAVLGIFLKVGSAKPGLQKVVDVLDSIKTKGKSADFTNFDPRGLLPESLDYWTYPGSLTTPPLLECVTWIVLKEPISVSSEQVLKFRKLNFNGEGEPEELMVDNWRPAQPLKNRQIKASFK | 9.337242168318426 |
+| drug_smile  | protein_seq | -log($\frac{affinity}{1e9}$) |
 
 and then, you can use MutDTA to train or test your data using the following command:
 ```
