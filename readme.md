@@ -1,6 +1,6 @@
 # MutDTA: Unveiling Resistance Mechanisms of Viral Protein Mutations via Interpretable Transfer Learning
 
-This repository contains the MutDTA deep learning model, which is designed for predicting the effects of mutation on DTA. The model is implemented in Python and pytorch for accurate affinity predictions.
+This repository contains the MutDTA deep learning model, which is designed for predicting the effects of mutation on DTA. The model is implemented in python and pytorch for accurate affinity predictions.
 
 # Requirements
 ```
