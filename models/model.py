@@ -8,11 +8,6 @@ import torch.nn.functional as F
 from models.mpn import MPN
 from models.CAB import CrossAttentionBlock as CAB
 
-<<<<<<< HEAD
-# 初始化模型的权重
-=======
-
->>>>>>> 64d2f9e90d2d84721547c82c7c4ecbbaa13003c5
 def initialize_weights(model):
     for param in model.parameters():
         if param.dim() == 1:
@@ -107,17 +102,14 @@ class InteractionModel(nn.Module):
         if self.featurizer:
             return self.featurize(batch, features_batch, atom_descriptors_batch,
                                   atom_features_batch, bond_features_batch)
-<<<<<<< HEAD
         # 通过D-MPNN获取药物分子的embedding
         mpnn_out = self.normalization(self.encoder(batch, features_batch, atom_descriptors_batch,
                                        atom_features_batch, bond_features_batch))
         
         # 通过1D-CNN获取蛋白质序列的embedding
-=======
         mpnn_out = self.normalization(self.encoder(batch, features_batch, atom_descriptors_batch,
                                        atom_features_batch, bond_features_batch))
 
->>>>>>> 64d2f9e90d2d84721547c82c7c4ecbbaa13003c5
         sequence = sequence_tensor.to(self.device)
         embedded_xt = self.embedding_xt(sequence)
         input_nn = self.conv_in(embedded_xt)
@@ -133,13 +125,10 @@ class InteractionModel(nn.Module):
         out_conv = self.relu(conved)
         protein_tensor = out_conv.view(out_conv.size(0),out_conv.size(1)*out_conv.size(2))
         protein_tensor = self.do(self.relu(self.fc1_xt(self.normalization(protein_tensor))))
-<<<<<<< HEAD
         # 交叉注意力模块获取药物-靶点融合embedding
         output = self.CAB(mpnn_out, protein_tensor)
         # 使用多层MLP获取亲和力分数
-=======
         output = self.CAB(mpnn_out, protein_tensor)
->>>>>>> 64d2f9e90d2d84721547c82c7c4ecbbaa13003c5
         output = self.ffn(output)
 
         return output
