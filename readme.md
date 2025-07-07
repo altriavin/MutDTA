@@ -27,6 +27,7 @@ Or you can use our preprocessing data:
 | ----------- | ----------- |
 | pre-training      | https://github.com/altriavin/MutDTA/blob/master/dataset/Kd.csv       |
 | fine-tuning   | https://github.com/altriavin/MutDTA/blob/master/dataset/platinum.csv        |
+| code start dataset   | https://github.com/altriavin/MutDTA/blob/master/dataset/cold_start |
 
 # Usage
 1. Train and test on the demo data
